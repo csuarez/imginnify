@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon-128.png" alt="Imginnify icon" width="96" height="96">
+</p>
+
 # Imginnify
 
 Firefox extension that automatically redirects Instagram URLs to [Imginn](https://imginn.com), an anonymous Instagram viewer — no login walls, no tracking by Instagram.
