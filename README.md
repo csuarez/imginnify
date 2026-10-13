@@ -48,6 +48,10 @@ Or load it manually: open `about:debugging#/runtime/this-firefox` → **Load Tem
 
 Requires Firefox 142+ (Manifest V3 with `declarativeNetRequest` regex substitution).
 
+## License
+
+[MIT](LICENSE)
+
 ## Note on Imginn domains
 
 Imginn occasionally changes domains and has clone sites. The target domain appears only in `rules.json` — if imginn.com moves, update the `regexSubstitution` values there.
