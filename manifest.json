@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Imginnify",
+  "version": "1.0.0",
+  "description": "Automatically redirects Instagram URLs to Imginn for anonymous, login-free browsing.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "imginnify@csuarez",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": ["declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://*.instagram.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "imginn-redirects",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/icon.svg",
+    "default_title": "Imginnify"
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  }
+}
